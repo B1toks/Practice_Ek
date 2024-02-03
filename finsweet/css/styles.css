@@ -78,6 +78,7 @@ main {
 .main{
     height: 800px;
     width: 1920px;
+    margin-left: 320px;
 }
 
 .divbox{
@@ -147,12 +148,103 @@ header {
 }
 
 .ba{
-
   cursor: pointer;
   transition-duration: 0.4s;
 }
 
-.div_butt:hover {
-  background-color: #04AA6D;
+.div_butt:hover { 
+  background-color: #FCD980;
   color: white;
+}
+
+
+
+
+/* Body/Preview */
+
+
+.preview{
+  background: var(--Tint-blue, #1C1E53);
+  height: 668px;
+  width: 100%;
+  width: 1920px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+
+}
+
+.preview_text{
+  width: 580px;
+  height: 415px;
+  margin-left: 320px;
+
+}
+
+.preview_text_title{
+  color: var(--White, #FFF);
+
+  font-family: Poppins;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 74px; /* 137.037% */
+  margin-bottom: 24px;
+}
+
+.preview_text_descr{
+  color: var(--White, #FFF);
+
+  /* Body 2 */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+  opacity: 0.7;
+  margin-bottom: 48px;
+}
+
+.preview_button{
+  display: flex;
+
+}
+
+.div_but_view_ourwork{
+  display: inline-flex;
+  padding: 16px 56px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 41px;
+  background: #FCD980;
+  color: var(--DARK, #1B1C2B);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 177.778% */
+}
+
+.div_but_view_pricing{
+  color: var(--White, #FFF);
+
+  /* Label 2 */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.arrow1{
+  margin-left: 15px;
+}
+
+.preview_img{
+  margin-left: 60px;
 }
