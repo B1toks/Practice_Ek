@@ -5,6 +5,14 @@ html{
     overflow-x: hidden;
 }
 
+a{
+  all: unset;
+}
+
+button{
+  all: unset;
+}
+
 
 
 /* title
@@ -43,6 +51,12 @@ line-height: 36px;
 
 */
 body {
+  color: var(--Grey, #F4F6FC);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
   margin: 0;
   color: #fff;
   display: table;
@@ -84,17 +98,13 @@ header {
   background: #1C1E53;
   height: 92px;
   width: 1920px;
-  display: grid;
-  position: relative;
-  align-items: center;
-
-
 }
 
 .header_content{
-  justify-content: center;
+  justify-content: space-between;
   margin-left: 320px;
-
+  display: flex;
+  align-items: center;
   width: 1280px;
 }
 
@@ -111,10 +121,38 @@ header {
 
 .navbar{
   width: 480px;
-  flex-direction: end;
   justify-content: right;
-
   display: flex;
+  
+}
 
+.divnav{
 
+  margin-left: 25px;
+  font-weight: 500;
+  color: #BBBBCB;
+}
+
+.div_butt{
+  width: 185px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 41px;
+  border: 2px solid rgba(244, 246, 252, 0.20);
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  text-align: center;
+}
+
+.ba{
+
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.div_butt:hover {
+  background-color: #04AA6D;
+  color: white;
 }
