@@ -1,0 +1,120 @@
+body{
+    background-color: #d3d3d3;
+}
+html{
+    overflow-x: hidden;
+}
+
+
+
+/* title
+color: var(--Dark-blue, #282938);
+text-align: center;
+
+/* Heading 2 
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: 64px; /* 133.333% */
+
+/* 
+text
+color: var(--Dark-blue, #282938);
+
+
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+*/
+
+/* 
+color: var(--Royal-Blue, #2405F2);
+text-align: center;
+
+/* Heading 6 
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 36px; 
+
+*/
+body {
+  margin: 0;
+  color: #fff;
+  display: table;
+  min-height: 100vh;
+  width: 100%;
+}
+
+
+
+main {
+  display: table-row;
+
+  /* Чтобы ряд занимал всё оставшееся пространство, так как табличная разметка не позволит ему вытолкнуть header и footer */
+  height: 100%;
+  background: #d3d3d3;
+
+}
+
+.main{
+    height: 800px;
+    width: 1920px;
+}
+
+.divbox{
+    height: 600px;
+    width: 1920px;
+}
+
+footer {
+  background: black;
+  height: 80px;
+}
+
+
+
+/* header */
+
+header {
+  background: #1C1E53;
+  height: 92px;
+  width: 1920px;
+  display: grid;
+  position: relative;
+  align-items: center;
+
+
+}
+
+.header_content{
+  justify-content: center;
+  margin-left: 320px;
+
+  width: 1280px;
+}
+
+.freespace{
+  width: 450px;
+  height: 92px;
+}
+
+.logo{
+  width: 125px;
+  height: 25;
+  flex-shrink: 0;
+}
+
+.navbar{
+  width: 480px;
+  flex-direction: end;
+  justify-content: right;
+
+  display: flex;
+
+
+}
