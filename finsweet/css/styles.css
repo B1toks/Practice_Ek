@@ -430,7 +430,6 @@ header {
   font-weight: 500;
   line-height: 28px; /* 175% */
 
-  z-index: 3;
 }
 
 .Oftopfooter_content{
@@ -482,4 +481,107 @@ header {
   height: 984px;
   flex-shrink: 0;
   background: #FFF;
+}
+
+.Seconddivbox_titlebox{
+  width: 1290px;
+  height: 64px;
+  margin-left: 320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Seconddivbox_link{
+  width: 123px;
+  height: 28px;
+  flex-shrink: 0;
+  justify-content: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Seconddivbox_title{
+
+  height: 64px;
+  color: var(--Dark-blue, #282938);
+
+  /* Heading 2 */
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px; /* 133.333% */
+}
+
+.Seconddivbox_link_b{
+  color: #282938;
+
+  /* Label 2 */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+}
+
+.Seconddivbox_examples{
+  width: 1280px;
+  height: 600px;
+  margin-left: 320px;
+  margin-top: 64px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.Seconddivbox_examples_left_text{
+  background: linear-gradient(329deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+  width: 396px;
+  height: 600px;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.Seconddivbox_examples_title{
+  color: var(--White, #FFF);
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px; /* 150% */
+  width: 313px;
+  height: 73px;
+  display: flex;
+}
+
+.Seconddivbox_examples_undertitle{
+  color: var(--White, #FFF);
+
+  /* Body 2 */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+
+  width: 293px;
+  height: 56px;
+  opacity: 0.8;
+  align-self: flex-end;
+}
+
+.Seconddivbox_examples_link{
+  width: 140px;
+  height: 28px;
+  display: flex;
+  align-items: center;
 }
