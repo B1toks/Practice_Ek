@@ -1,0 +1,523 @@
+body{
+    background-color: #fff;
+    font-family: Poppins;
+}
+html{
+    overflow-x: hidden;
+}
+
+a{
+  all: unset;
+}
+
+button{
+  all: unset;
+}
+
+textarea{
+  all:unset;
+}
+
+
+
+/* title
+color: var(--Dark-blue, #282938);
+text-align: center;
+
+/* Heading 2 
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: 64px; /* 133.333% */
+
+/* 
+text
+color: var(--Dark-blue, #282938);
+
+
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+*/
+
+/* 
+color: var(--Royal-Blue, #2405F2);
+text-align: center;
+
+/* Heading 6 
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 36px; 
+
+*/
+body {
+  color: var(--Grey, #F4F6FC);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0;
+  color: #fff;
+  display: table;
+  min-height: 100vh;
+  width: 100%;
+}
+
+
+
+main {
+  display: table-row;
+
+  /* Чтобы ряд занимал всё оставшееся пространство, так как табличная разметка не позволит ему вытолкнуть header и footer */
+  height: 100%;
+  background: #fff;
+
+}
+
+.main{
+    height: 800px;
+    width: 1920px;
+    margin-left: 320px;
+}
+
+.divbox{
+    height: 600px;
+    width: 1920px;
+}
+
+footer {
+  background: black;
+  height: 80px;
+}
+
+header {
+  background: #1C1E53;
+  height: 92px;
+  width: 1920px;
+}
+
+
+
+
+
+
+
+
+/* header */
+
+
+
+.header_content{
+  justify-content: space-between;
+  margin-left: 320px;
+  display: flex;
+  align-items: center;
+  width: 1280px;
+}
+
+.freespace{
+  width: 450px;
+  height: 92px;
+}
+
+.logo{
+  width: 125px;
+  height: 25;
+  flex-shrink: 0;
+}
+
+.navbar{
+  width: 480px;
+  justify-content: right;
+  display: flex;
+  
+}
+
+.divnav{
+
+  margin-left: 25px;
+  font-weight: 500;
+  color: #BBBBCB;
+}
+
+.div_butt{
+  width: 185px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 41px;
+  border: 2px solid rgba(244, 246, 252, 0.20);
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  text-align: center;
+
+  transition: all .3s ease-out;
+}
+
+.ba{
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.div_butt:hover { 
+  background-color: #FCD980;
+  color: white;
+}
+
+
+
+
+
+
+
+/* Footer */
+
+
+.footer{
+    width: 1920px;
+    height: 492px;
+  }
+  
+  .BlueFooter{
+    height: 400px;
+    width: 1920px;
+    flex-shrink: 0;
+    background: #1C1E53;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  
+  .tagline{
+    color: var(--White, #FFF);
+  
+    /* Label 2 */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+  
+    opacity: 0.8;
+    margin-top: 24px;
+  }
+  
+  .FFooter{
+    width: 400px;
+    height: 120px;
+    margin-left: 320px;
+  }
+  
+  .SFooter{
+    margin-left: 260px;
+    height: 165px;
+    width: 400px;
+    
+  }
+  
+  .SFooter_title{
+    color: #FFF;
+  
+    /* Heading 2 */
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px; /* 133.333% */
+  }
+  
+  .SFooter_description{
+    color: var(--Grey, #F4F6FC);
+  
+    /* Body 1 */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    opacity: 0.8;
+  
+    margin-top: 14px;
+    margin-bottom: 28px;
+  }
+  
+  .SFooter_socials{
+    display: flex; 
+    justify-content: space-between;
+    width: 144px;
+    height: 16px;
+  }
+  .asocials{
+    width: 16px;
+    flex-shrink: 0;
+  }
+  
+  .YFooter{
+    display: flex;
+    width: 517px;
+    height: 95px;
+    flex-shrink: 0;
+    background: var(--Yellow, #FCD980);
+    justify-content: space-evenly;
+  
+    margin-top: 43px;
+    
+  }
+  
+  .emailbox{
+    color: var(--Dark-blue, #282938);
+    width: 180px;
+    height: 60px;
+  
+  }
+  
+  .callusbox{
+    margin-left: 0px;
+    width: 140px;
+    height: 60px;
+  }
+  
+  .emaildivbox{
+    width: 120px;
+    height: 40px;
+    display: flex;
+  }
+  
+  .email{
+    color: var(--Dark-blue, #282938);
+  
+    /* Label 01 */
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 177.778% */
+  }
+  
+  .callus{
+    color: var(--Dark-blue, #282938);
+  
+    /* Label 01 */
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 177.778% */
+  }
+  
+  .number{
+    color: var(--Dark-blue, #282938);
+  
+    /* Body 1 */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+  }
+  
+  .divcallus{
+    display: flex;
+    height: 40px;
+  }
+  
+  .OftopFooter{
+    height: 92px;
+    width: 1920px;
+    background: var(--White, #FFF);
+    color: #282938;
+  
+    color: var(--Dark-blue, #282938);
+  
+    /* Body 2 */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+  
+  }
+  
+  .Oftopfooter_content{
+    justify-content: space-between;
+    margin-left: 320px;
+    display: flex;
+    align-items: center;
+    width: 1280px;
+  }
+  
+  .copyr{
+    color: var(--Dark-blue, #282938);
+  
+    /* Body 2 */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 175% */
+  }
+  
+  .navaF{
+    color: var(--Dark-blue, #282938);
+  
+    /* Body 2 */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 175% */
+  }
+  
+  
+  
+
+
+
+
+
+  /* Contacts */
+  
+.contact_divBlock{
+  height: 1100px;
+  width: 1920px;
+}
+
+.contact_divBlock_content{
+  width: 1060px;
+  height: 840px;
+  padding-left: 430px;
+  padding-top: 128px;
+  
+}
+
+
+
+
+
+.OurPricingPlans_title{
+  color: var(--Dark-blue, #282938);
+  display: flex;
+  justify-content: center;
+  /* Heading 2 */
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px; /* 133.333% */
+  margin-bottom: 16px;
+}  
+  
+
+.OurPricingPlans_undertitle{
+    color: var(--Dark-blue, #282938);
+
+    display: flex;
+    justify-content: center;
+    /* Body 2 */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+    opacity: 0.7;
+    margin-bottom: 64px;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.input_text{
+    display: inline-flex;
+    padding: 18px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background-color: #F4F6FC;
+    width: 360px;
+}
+
+.contact_form_box{
+  width: 1060px;
+  height: 640px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: var(--Grey, #F4F6FC);
+}
+
+.contact_name_email_box{
+  display: flex;
+  width: 900px;
+  height: 100px;
+
+  justify-content: space-between;
+}
+
+label{
+  color: #000;
+
+  /* Label 01 */
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 177.778% */
+}
+
+.contact_form_box_content{
+ padding-top: 55px;
+  margin-left: 80px;
+  height: 520px;
+  width: 900px;
+}
+
+.contact_subjects_box{
+  display: flex;
+  width: 900px;
+  height: 100px;
+
+  justify-content: space-between;
+}
+
+.textarea_text{
+  
+  display: flex;
+  width: 815px;
+  height: 138px;
+  padding: 18px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  color: #000;
+  background-color: #F4F6FC;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  /* Body 1 */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+
+}
+
+.button_div{
+  display: flex;
+  width: 254px;
+  height: 64px;
+
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 41px;
+  background: var(--Dark-blue, #282938);
+  margin-top: 32px;
+}
