@@ -41,3 +41,46 @@ footer {
   background: black;
   height: 80px;
 }
+
+a{
+  all: unset;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: #475467;
+}
+
+
+
+
+/* .inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+} */
+
+
+
+
+
+
+
+
+/* header */
+
+.header_content{
+  display: flex;
+}
+
+
+.logo_title{
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Inter", sans-serif;
+  color: #475467;  
+}

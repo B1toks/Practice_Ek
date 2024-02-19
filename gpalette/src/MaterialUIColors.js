@@ -97,7 +97,6 @@ function MaterialUIColors() {
     return <div>Loading...</div>;
   }
 
-  // Function to chunk array into smaller arrays
   function chunkArray(array, chunkSize) {
     const chunks = [];
     for (let i = 0; i < array.length; i += chunkSize) {
@@ -105,7 +104,7 @@ function MaterialUIColors() {
     }
     return chunks;
   }
-
+  
   const groupedColors = chunkArray(materialUIColorsPalette.colors, 4);
 
   return (
@@ -114,11 +113,13 @@ function MaterialUIColors() {
       {groupedColors.map((group, groupIndex) => (
         <div key={groupIndex} className="color-group2">
           {group.map((color, colorIndex) => (
-            <ColorBlock key={colorIndex} color={color} onClick={() => copyColorCodeToClipboard(color.color)} />
+            <ColorBlock key={colorIndex} color={color} />
           ))}
         </div>
       ))}
-      {/* Посилання для повернення назад */}
+
+
+
       <div className="but_back">
         <div className="button"><Link to="/">Go Back</Link></div>
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="12" viewBox="0 0 25 12" fill="none">
@@ -127,29 +128,31 @@ function MaterialUIColors() {
       </div>
     </div>
   );
-}
 
-
-function ColorBlock({ color }) {
-  const [showTooltip, setShowTooltip] = useState(false);
-
-  return (
-    <div
-      className="color2"
-      style={{ backgroundColor: color.color }}
-      onMouseEnter={() => setShowTooltip(true)}
-      onMouseLeave={() => setShowTooltip(false)}
-    >
-      
-      <span className="color_name">{color.name}</span>
-      {/* Показ дівбоксу при ховері */}
-      {showTooltip && (
-        <div className="tooltip">
-          <img src = "./img/pngegg.png" class = "imagetyan"></img>
-        </div>
-      )}
-    </div>
-  );
+  function ColorBlock({ color }) {
+    const [showTooltip, setShowTooltip] = useState(false);
+  
+    return (
+      <div
+        className="color2"
+        style={{ backgroundColor: color.color }}
+        onMouseEnter={() => setShowTooltip(true)}
+        onMouseLeave={() => setShowTooltip(false)}
+        onClick={() => copyColorCodeToClipboard(color.color)}
+      >
+        
+        <span className="color_name">{color.name}</span>
+        {/* Показ дівбоксу при ховері */}
+        {showTooltip && (
+          <div className="tooltip">
+            <img src="./img/pngegg.png" className="imagetyan" alt="tooltip-img"></img>
+            
+          </div>
+        )}
+      </div>
+    );
+  }
+  
 }
 
 export default MaterialUIColors;
